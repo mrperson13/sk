@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Dead Volcano">
+    <trigger priority="1430">
+      <pattern>You get A bit of ash from a corpse of A tiny ash spirit.</pattern>
+      <value>put all.ash @container</value>
+    </trigger>
+    <trigger priority="1440">
+      <pattern>You get an obsidian totem from a corpse</pattern>
+      <value>put all.tot @container</value>
+    </trigger>
+    <trigger priority="1450">
+      <pattern>Lily asks to you 'Did you bring me more rods~?'</pattern>
+      <value>get totem @container
+give totem lily</value>
+    </trigger>
+    <trigger priority="1460">
+      <pattern>Lily says to you 'I still need</pattern>
+      <value>get totem @container
+give totem lily</value>
+    </trigger>
+    <trigger priority="1470">
+      <pattern>Lily says to you 'Thank you! That should be enough to get through the next batch of tests.'</pattern>
+      <value>get totem @container
+give totem lily</value>
+    </trigger>
+    <trigger priority="1480">
+      <pattern>Carander asks to you 'Well~? Have you found enough samples~?'</pattern>
+      <value>get ash @container
+give ash cara</value>
+    </trigger>
+    <trigger priority="1490">
+      <pattern>Carander says to you 'You still need to bring me</pattern>
+      <value>get ash @container
+give ash cara</value>
+    </trigger>
+    <trigger priority="1500">
+      <pattern>Carander says to you 'That should be enough. You can work for me more later if you wish, but if you haven't already helped Lily, you should see if you can be of any use to her as well.'</pattern>
+      <value>get ash @container
+give ash cara</value>
+    </trigger>
+    <trigger priority="1510">
+      <pattern>A tiny ash spirit has settled here.</pattern>
+      <value>1 ash
+1 ash
+1 ash
+1 ash
+1 ash
+1 ash</value>
+    </trigger>
+    <trigger priority="2370">
+      <pattern>A few brightly burning torches line the entrance to this cavern.  The$floor is dirt and relatively level, giving good purchase and allowing one to$move confidently about.  The air feels cool and dank upon your skin, a few$water droplets falling from stalactites above.  A dark tunnel continues$north.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)WELCOME TO THE DEAD VOLCANO LEVELING PACK!}
+#PRINT {%ansi(magenta)------------------------------------------}
+#PRINT {%ansi(magenta)To get started, type #VAR container <name>}
+#PRINT {%ansi(magenta)an example would be #VAR container robes  }
+#PRINT {%ansi(magenta)Make sure AUTO LOOT is enabled!}
+#PRINT {%ansi(magenta)Set an alias as 1 to your default action, }
+#PRINT {%ansi(magenta)This can be alias 1 kill &1 or something }
+#PRINT {%ansi(magenta)else like alias 1 c 'magic missile' &1 }]]></value>
+    </trigger>
+    <trigger priority="2390">
+      <pattern>Not far from the entrance, the darkness quickly overtakes you.  As you$move deeper into the cave, you can only see a few strides ahead of you at a$time.  Feeling your way around the room you can find multiple exits though$each looks and feels the same.  The only natural lighting in the room comes$from the entrance to the South.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Feel free to rest here while your items are turned in.}
+#PRINT {%ansi(magenta)Directions for the maze are: e;ne;n;e;nw;w;w;nw;ne;se}]]></value>
+    </trigger>
+    <trigger priority="2400">
+      <pattern>Standing in the shallows, you are near the center of a massive cavern$illuminated by a soft light that seems to emanate from the distant walls. $The footing is a rough, black and red sand that forms a small place to rest$in the otherwise water-filled cavern.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)From here, just head southwest all the way.}]]></value>
+    </trigger>
+    <trigger priority="2410">
+      <pattern>The floor here is solid and a very dark red, but has the distinct texture$of pumice rock.  The walls remain jagged and littered with pockets of$lichen.   While small in circumference, this cave seems to have no ceiling,$instead rising straight up for what must be several stories.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Type: "get lichen pocket" twice}
+#PRINT {%ansi(magenta)It's something you can eat for armor, fly}]]></value>
+    </trigger>
+    <trigger priority="2420">
+      <pattern>The air shaft ends abruptly as it turns into a rounded, lava-bored$tunnel.  The walls are beautifully striped in reds, browns, yellows, and$even some hints of purple, and the floor is nearly as concave as the walls. $There remains a fair breeze blowing eastward now through the tube.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)From here, explore and kill the elementalists}
+#PRINT {%ansi(magenta)I'll warn you of the dangerous room.}
+#PRINT {%ansi(magenta)You can land now.}
+]]></value>
+    </trigger>
+    <trigger priority="2430">
+      <pattern>An undulating tunnel$  The lava tube undulates as it rolls deeper into the mountain, its striped$walls twisting around you.  The floor is slightly concave with irregular,$long-since solidified deposits of lava rock throughout the corridor, but$walking is not difficult.  From here there are tunnels leading est and,$southeast.   $Obvious exits: w se</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Watch out! There's a hard to beat agro mob WEST}]]></value>
+    </trigger>
+    <trigger priority="2440">
+      <pattern>An end to the tubes$  The relatively smooth walls of the lava tubes end abruptly here as the$tube turns upward into another ventilation shaft.  The walls here are less$uniform and the striped coloration starts to fade back to varying shades of$reds and black.  One may or may not be able to find purchase for climbing$here, but the only way out, aside from back through the lava tubes, is up. $ $Obvious exits: u ne</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Eat that other lichen now, and go up.}]]></value>
+    </trigger>
+    <trigger priority="2450">
+      <pattern>Atop a dormant volcano$  What was once a mountaintop is now a lop-sided crater, evidence of an$eruption long in the past.  The crater walls are steep on one side and$nearly level with the ground on the other.  Tiny bits of crumbled red and$black pumice rock litter the landscape, making for deep footing.  A tunnel$can be seen at the base of the steeper wall of the crater.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Land, rest, wait for the turn in trigger to stop.}
+#PRINT {%ansi(magenta)When you're finished, start over! Go through the path}]]></value>
+    </trigger>
+    <trigger priority="2460">
+      <pattern>Deafening dark$  The roar of a waterfall fills your ears and a drenching mist now$threatens to fill your lungs as well.  Where you could see your outstretched$arm moments ago, now you can hardly see your hand held just in front of your$face.  The noise is deafening to the point it could be coming from any$direction.  $Obvious exits: n e s w nw ne sw se</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Go southeast and then down.}]]></value>
+    </trigger>
+    <trigger priority="2470">
+      <pattern>The dark is really setting in now.  The sound of water dripping echoes$quietly throughout the room.  The dirt floor is rough and strewn with$pebbles that crunch softly beneath your feet.  Humid air fills your lungs$and the smell of something rotting tingles at your nostrils.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Northeast}]]></value>
+    </trigger>
+    <trigger priority="2480">
+      <pattern>The darkness here seems unnaturally dense.  No amount of magic can light$the room much past your person.  Shadows dance at the peripherals of your$vision, leading you to wonder if you're not alone.  Pebbles at your feet$have given way to a rough-hewn stone floor which must be navigated with care$in the dark.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)North}]]></value>
+    </trigger>
+    <trigger priority="2490">
+      <pattern>The skitter of feet across the stone floor catches your ears as you move$further into the darkness.  The air is humid here and a faint draft drifts$through the room.  Searching for exits, your only choice is to push forward$into darkness.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)East}]]></value>
+    </trigger>
+    <trigger priority="2500">
+      <pattern>Just as you think you might be growing accustomed to the unnatural dark,$the sound of children laughing reaches your ears.  It dissipates whenever$you turn to look in its direction only for someone to giggle behind your$back a moment later.  It might be best to continue forward, whichever$direction that might be.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Northwest}]]></value>
+    </trigger>
+    <trigger priority="2510">
+      <pattern>While the darkness does not seem to dissipate, the sound of dripping$water is muffled by what might be a steady flow of water somewhere beyond. $Touching the walls or boulders that intermittently block your path, your$hand would find only slick, wet stone.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)West}]]></value>
+    </trigger>
+    <trigger priority="2520">
+      <pattern>The scent of mold touches your nose as you delve deeper into the caverns,$the way back to the entrance as unclear as your path forward.  The sound of$the water, while still faint, seems to come from behind the rock that$surrounds you.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)West}]]></value>
+    </trigger>
+    <trigger priority="2530">
+      <pattern>The darkness is disorienting, even to those most at home beneath the$earth.  As you move forward, the visibility dwindles to the point you can no$longer see much beyond your nose.  Regardless how you turn, nothing seems to$distinguish one direction from another.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Northeast}]]></value>
+    </trigger>
+    <trigger priority="2540">
+      <pattern>The darkness is beginning to feel palpable, your vision limited to an$arm's length in front of you, fingers disappearing before your eyes.  The$floor continues to be rough beneath your feet and the draft swirls around$the space, its origin unclear.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Northwest}]]></value>
+    </trigger>
+    <trigger priority="2550">
+      <pattern>You can hear the water rushing now and it sounds close.  The floor and$all surfaces of this room seem slick with algae and the draft through the$room now comes laden with mist that covers your clothing and skin and your$pretty confident something just slithered past your foot.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Northeast}]]></value>
+    </trigger>
+    <trigger priority="2560">
+      <pattern>There is no struggle as your body crashes down with the cascade into a$deep body of water below.  The force of the water pushes you ever downward$and tumbles your body end over end against your will for entirely too long. $Just as you think this could be the end, your body breaks free of the tumult$and into quieter water.</pattern>
+      <value><![CDATA[#PRINT {%ansi(magenta)&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;,&#248;&#164;&#176;&#186;&#164;&#248;,&#184;&#184;,&#248;&#164;&#186;&#176;`&#176;&#186;&#164;&#248;,&#184;}
+#PRINT {%ansi(magenta)Down}]]></value>
+    </trigger>
+  </class>
+</cmud>
