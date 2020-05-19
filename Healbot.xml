@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Healbot" initdisable="true">
+    <alias name="hl" autoappend="true">
+      <value>#variable healbot "cure light"</value>
+    </alias>
+    <alias name="heal" autoappend="true">
+      <value>#variable healbot "heal"</value>
+    </alias>
+    <alias name="hc" autoappend="true">
+      <value>#VARIABLE healbot "cure critical"</value>
+    </alias>
+    <button autosize="false" width="75" height="35" inset="true" color="black" textcolor="lime" priority="3">
+      <caption>F1</caption>
+      <value>cast '@healbot' F1</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="6">
+      <caption>M1</caption>
+      <value>cast '@healbot' M1</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="9">
+      <caption>B1</caption>
+      <value>cast '@healbot' B1</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" color="black" textcolor="lime" priority="11">
+      <caption>F2</caption>
+      <value>cast '@healbot' F2</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="13">
+      <caption>M2</caption>
+      <value>cast '@healbot' M2</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="15">
+      <caption>B2</caption>
+      <value>cast '@healbot' B2</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" color="black" textcolor="lime" priority="17">
+      <caption>F3</caption>
+      <value>cast '@healbot' F3</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="19">
+      <caption>M3</caption>
+      <value>cast '@healbot' M3</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="21">
+      <caption>B3</caption>
+      <value>cast '@healbot' B3</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" color="black" textcolor="lime" priority="23">
+      <caption>AoE</caption>
+      <value>cast 'holy word'</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="25">
+      <caption>INFO</caption>
+      <value>info</value>
+    </button>
+    <button autosize="false" width="75" height="35" inset="true" stack="true" color="black" textcolor="lime" priority="27">
+      <caption>WoR</caption>
+      <value>cast 'word of recall'</value>
+    </button>
+  </class>
+</cmud>

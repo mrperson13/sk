@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Info Catcher" initdisable="true">
+    <trigger priority="610">
+      <pattern>Group:</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="620">
+      <pattern>Characters*Rank*Pos*Here*Follow*Prone*HP*ME*PE</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="630">
+      <pattern>F1*F2*F3</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="640">
+      <pattern>M1*M2*M3</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="650">
+      <pattern>B1*B2*B3</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="660">
+      <pattern>Leader*{F1|F2|F3|M1|M2|M3|B1|B2|B3}</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+    <trigger priority="670">
+      <pattern>Member*{F1|F2|F3|M1|M2|M3|B1|B2|B3}</pattern>
+      <value>#capture "Info"</value>
+    </trigger>
+  </class>
+</cmud>

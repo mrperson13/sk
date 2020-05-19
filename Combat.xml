@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Combat">
+    <trigger priority="700">
+      <pattern>The white aura around your body fades.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> SANCTUARY DOWN ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="710">
+      <pattern>Your body feels less fatigued.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="720">
+      <pattern>You feel your pulse slow down.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> RALLY DOWN ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="730">
+      <pattern>Your spirit feels more settled.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="740">
+      <pattern>Pink flames surround *.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> FAERIE FIRE ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="750">
+      <pattern>There is too much chaos going on right now.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="760">
+      <pattern>Better stand up first.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> STAND UP ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="770">
+      <pattern>Your elemental flickers slightly.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> ONE TICK ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="780">
+      <pattern>(*) disarms (*)!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> %1 DISARMED %2 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="790">
+      <pattern>That group is in the thick of battle.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> CANNOT STAB ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="800">
+      <pattern>Your mount is now rested and recharged.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> SPIRIT STEED READY ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="810">
+      <pattern>You no longer see in the dark.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> INFRA DOWN ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="820">
+      <pattern>A spirit steed glows brightly and vanishes back to the upper planes.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> STEED GONE ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="830">
+      <pattern>Your spirit companion flickers slightly.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> ONE TICK ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="840">
+      <pattern>Both of {its|his|her} legs are already mangled.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> SWITCH TO CIRCLE ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="850">
+      <pattern>Your methodical attack breaks down as * taunts you.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TAUNT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="860">
+      <pattern>Your pulse slows to normal.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="870">
+      <pattern>* starts to concentrate.</pattern>
+      <value>#CO 13</value>
+    </trigger>
+    <trigger priority="880">
+      <pattern>* utters the words</pattern>
+      <value>#CO 13</value>
+    </trigger>
+    <trigger priority="890">
+      <pattern>* glows with mystical energy!</pattern>
+      <value>#CO 13</value>
+    </trigger>
+    <trigger priority="900">
+      <pattern>* regains {his|her|its} footing.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="910">
+      <pattern>You regain your footing.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="920">
+      <pattern>You need to regain your feet first.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="930">
+      <pattern>Your bash misses and you fall flat on your face!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> MISSED BASH ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="940">
+      <pattern>You slam into * and send {him|her|it} sprawling!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> BASHED ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="950">
+      <pattern>You evade * bash and {he|she|it} falls flat on {his|her|its} face.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> MISSED BASH ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="960">
+      <pattern>(*) slams into (*) and sends (*) sprawling!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> %1 BASHED %2 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="970">
+      <pattern>* bash misses and {he|she|it} falls flat on {his|her|its} face.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> MISSED BASH ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="980">
+      <pattern>You trip * and {he|she|it} goes down!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TRIPPED ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="990">
+      <pattern>You try to trip * but end up tripping yourself!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> MISSED TRIP ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1000">
+      <pattern>* tries to trip * but ends up tripping {himself|herself|itself}!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> MISSED TRIP ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1010">
+      <pattern>* trips you and you go down!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TRIPPED ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1020">
+      <pattern>(*) trips (*) sending {him|her|it} to the ground.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> %1 TRIPPED %2 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1030">
+      <pattern>* appears to be blinded.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> BLIND ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1040">
+      <pattern>* is blinded by the dirt in {his|her|its} eyes!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> BLIND ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1050">
+      <pattern>* sly taunts cause * to charge {him|her|it} in fury.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TAUNT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1060">
+      <pattern>* attempts to taunt *, but just sounds lame.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TAUNT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1070">
+      <pattern>* tries to taunt you. Maybe you should teach {him|her|it} a lesson?</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TAUNT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1080">
+      <pattern>Your sly taunts cause * to charge you in fury.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> TAUNT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1090">
+      <pattern>You regain consciousness and rise unsteadily to your feet.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="1100">
+      <pattern>* regains consciousness and rises unsteadily to {its|his|her} feet.</pattern>
+      <value>#CO 11</value>
+    </trigger>
+    <trigger priority="1110">
+      <pattern>(*) is standing behind your victim, blocking your attack.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> %1 BLOCKING ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1120">
+      <pattern>You are too busy defending yourself.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> CANNOT CIRCLE ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1130">
+      <pattern>* is still hyper-alert from combat.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> HYPER ALERT ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1140">
+      <pattern>* tries to disarm you, but fails.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> FAILED DISARM ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1150">
+      <pattern>{His|Her|Its} weapon won't budge!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> CURSED WEAPON ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1160">
+      <pattern>* disarms you and sends your weapon flying!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> BACKUP WEAPON ASAP ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1170">
+      <pattern>You disarm (*)</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> DISARMED %1 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1180">
+      <pattern>You fail to disarm *</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> FAILED DISARM ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1190">
+      <pattern>* disarms you but you secure your weapon.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> WIELD WEAPON ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1200">
+      <pattern>You disarm (*) and send {his|her|its} weapon flying!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> DISARMED %1 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1210">
+      <pattern>(*) disarms (*) and sends {his|her|its} weapon flying!</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> %1 DISARMED %2 ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1220">
+      <pattern>You feel unclean.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> CURSED ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+    <trigger priority="1230">
+      <pattern>(*) looks very uncomfortable.</pattern>
+      <value><![CDATA[#SAY ~>~>~>~>~>~>~> CURSED ~<~<~<~<~<~<~<;#CO 11]]></value>
+    </trigger>
+  </class>
+</cmud>

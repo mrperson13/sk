@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Autolog" initenable="true">
+    <notes>Used to automatically send username and password login info</notes>
+    <event event="onconnect" priority="1400" name="_autolog">
+      <value>%char</value>
+    </event>
+    <trigger priority="1410" case="true" verbatim="true" newline="false" prompt="true">
+      <pattern>Password: </pattern>
+      <value>#PW;#T- autolog</value>
+    </trigger>
+  </class>
+</cmud>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<cmud>
+  <class name="Chat Catcher" initdisable="true">
+    <trigger priority="560">
+      <pattern>%1 replies '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+    <trigger priority="570">
+      <pattern>%1 tells you '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+    <trigger priority="580">
+      <pattern>You tell %1 '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+    <trigger priority="590">
+      <pattern>You tell the group '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+    <trigger priority="600">
+      <pattern>%1 tells the group '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+    <trigger priority="680">
+      <pattern>{~[HAMMER~]|~[DRUID~]|~[FIST~]|~[MIDNIGHT~]|~[HARLEQUIN~]|~[CRUCIBLE~]|~[LEGION~]|~[HAND~]|~[GUARDIAN~]|~[TALON~]} %*: %*</pattern>
+      <value>#CAPTURE "Chat"</value>
+    </trigger>
+    <trigger priority="1620">
+      <pattern>You reply to %1 '%*'</pattern>
+      <value>#capture "Chat"</value>
+    </trigger>
+  </class>
+</cmud>
